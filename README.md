@@ -31,10 +31,9 @@ pry(main)> charlie.driver?
 # => true
 ```
 
-```
 Iteration 2
 Use TDD to create a Vehicle class that responds to the following interaction pattern:
-
+```
 pry(main)> require './lib/vehicle'
 # => true
 
