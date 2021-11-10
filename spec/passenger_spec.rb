@@ -7,6 +7,23 @@ RSpec.describe Passenger do
   end
 
   it 'exists' do
-    expect(@charlie).to be_instance_of(Passeger)
+    expect(@charlie).to be_instance_of(Passenger)
+  end
+
+  it 'has attributes' do
+    expect(@charlie.name).to eq("Charlie")
+    expect(@charlie.age).to eq(18)
+  end
+
+  it 'adult if 18 or older' do
+    expect(@charlie.adult?).to eq(true)
+    expect(@taylor.adult?).to eq(false)
+  end
+  it 'defines driver' do
+    expect(@charlie.driver?).to eq(false)
+
+    @charlie.drive
+
+    expect(@charlie.driver?).to eq(true)
   end
 end
