@@ -29,12 +29,8 @@ pry(main)> charlie.drive
 
 pry(main)> charlie.driver?
 # => true
-<<<<<<< HEAD
-
-
 =======
 ```
->>>>>>> 963f400770a3a4c6604142a138c1fee986007c16
 
 Iteration 2
 Use TDD to create a Vehicle class that responds to the following interaction pattern:
