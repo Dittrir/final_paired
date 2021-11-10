@@ -1,5 +1,6 @@
 Use TDD to create a Passenger class that responds to the following interaction pattern. For the adult? method, a Passenger is considered an adult if they are age 18 or older.
 
+```
 pry(main)> require './lib/passenger'
 # => true
 
@@ -28,6 +29,9 @@ pry(main)> charlie.drive
 
 pry(main)> charlie.driver?
 # => true
+```
+
+```
 Iteration 2
 Use TDD to create a Vehicle class that responds to the following interaction pattern:
 
@@ -80,3 +84,4 @@ pry(main)> vehicle.passengers
 
 pry(main)> vehicle.num_adults
 # => 2
+```
