@@ -7,7 +7,7 @@ pry(main)> charlie = Passenger.new({"name" => "Charlie", "age" => 18})
 # => #<Passenger:0x00007fc1ad88b3c0...>
 
 pry(main)> taylor = Passenger.new({"name" => "Taylor", "age" => 12})    
-# => #<Passenger:0x00007fe0da2cf1b0...>
+# => taylor
 
 pry(main)> charlie.name
 # => "Charlie"
@@ -61,13 +61,13 @@ pry(main)> vehicle.passengers
 # => []
 
 pry(main)> charlie = Passenger.new({"name" => "Charlie", "age" => 18})    
-# => #<Passenger:0x00007fe0da1ec450...>
+# => charlie
 
 pry(main)> jude = Passenger.new({"name" => "Jude", "age" => 20})    
-# => #<Passenger:0x00007fe0da2730e0...>
+# => jude
 
 pry(main)> taylor = Passenger.new({"name" => "Taylor", "age" => 12})    
-# => #<Passenger:0x00007fe0da2cf1b0...>
+# => taylor
 
 pry(main)> vehicle.add_passenger(charlie)    
 
@@ -76,7 +76,7 @@ pry(main)> vehicle.add_passenger(jude)
 pry(main)> vehicle.add_passenger(taylor)    
 
 pry(main)> vehicle.passengers
-# => [#<Passenger:0x00007fe0da1ec450...>, #<Passenger:0x00007fe0da2730e0...>, #<Passenger:0x00007fe0da2cf1b0...>]
+# => [charlie, jude, taylor]
 
 pry(main)> vehicle.num_adults
 # => 2
