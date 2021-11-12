@@ -19,6 +19,10 @@ class Passenger
     @driver = true
   end
 
+  def stop_driving
+    @driver = false
+  end
+
   def driver?
     @driver
   end

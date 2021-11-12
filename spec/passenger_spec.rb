@@ -26,4 +26,14 @@ RSpec.describe Passenger do
 
     expect(@charlie.driver?).to eq(true)
   end
+
+  it 'stops driving' do
+    @charlie.drive
+
+    expect(@charlie.driver?).to eq(true)
+
+    @charlie.stop_driving
+
+    expect(@charlie.driver?).to eq(false)
+  end
 end
